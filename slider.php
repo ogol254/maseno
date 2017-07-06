@@ -156,7 +156,7 @@ data-endelementdelay="0.1"
 data-endspeed="500"
 data-endeasing="Power4.easeIn"
 style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-<h2 class="small-title second-title">We are inspired by our codes and Hostory</h2>
+<h2 class="small-title second-title">We are inspired by our codes and History</h2>
 </div>
 
 <!-- LAYER NR. 5 -->
@@ -173,7 +173,7 @@ data-endelementdelay="0.1"
 data-endspeed="500"
 data-endeasing="Power4.easeIn"
 style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-<button type="button" class="btn btn-primary" style="background-color: #e84700;border:1px solid #e95e1d;">Join Us Today</button>
+<button type="button" class="btn btn-primary" style="background-color: #e84700;border:1px solid #e95e1d;" data-toggle="modal" data-target="#JoinModal">Join Us Today</button>
 </div>
 </li>
 
@@ -194,7 +194,7 @@ style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
   data-splitout="chars"
   data-elementdelay="0.08"
   style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-  <h1><span>Maseno ICT CLUB</span> IS OUT COMMUNITY</h1>
+  <h1><span>Maseno ICT CLUB</span> IS OUR COMMUNITY</h1>
 </div>
 
 <!-- LAYER NR. 2 -->
@@ -261,7 +261,7 @@ data-endelementdelay="0.1"
 data-endspeed="500"
 data-endeasing="Power4.easeIn"
 style="z-index: 2; max-width: auto; max-height: auto; white-space: nowrap;">
-<button type="button" class="btn btn-default buy-btn">join now</button>
+<button type="button" class="btn btn-default buy-btn" data-toggle="modal" data-target="#JoinModal">join now</button>
 </div>
 </li>
 <li class="items" data-transition="slidevertical" data-slotamount="1" data-masterspeed="1500" data-thumb="img/slider/slider_img_03.jpg" data-delay="13000"  data-saveperformance="off">
@@ -348,7 +348,7 @@ data-endelementdelay="0.1"
 data-endspeed="1000"
 data-endeasing="Power1.easeOut"
 style="z-index: 3; max-width: auto; max-height: auto; white-space: nowrap;">
-<button type="button" class="btn btn-primary" style="background-color: #e84700;border:1px solid #e95e1d;">join us today</button>
+<button type="button" class="btn btn-primary" style="background-color: #e84700;border:1px solid #e95e1d;" data-toggle="modal" data-target="#JoinModal">join us today</button>
 </div>
 <!-- LAYER NR. 6 -->
 <div class="tp-caption tp-resizeme lfb randomrotate down-arrow"
