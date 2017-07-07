@@ -44,6 +44,59 @@
   <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
+    <!--Form validation script-->
+ <script>
+function validateForm(){
+ var x = document.forms["joinForm"]["fullName"].value;
+ var y = document.forms["joinForm"]["emailVal"].value;
+ var z = document.forms["joinForm"]["passVal"].value;
+ var w = document.forms["joinForm"]["repassVal"].value;
+ var a = 0;
+    if (x == null || x == "") {
+        document.getElementById("valFull").innerHTML="Please Fill in Name";
+        document.getElementById("valFull").style.color="red";
+        return false;
+    }
+    else if(!(x==null|| x=="")){
+      document.getElementById("valFull").innerHTML="Full names";
+        document.getElementById("valFull").style.color="black";
+    }
+    if(y==null || y==""){
+      document.getElementById("valEmail").innerHTML="Please Fill in email";
+        document.getElementById("valEmail").style.color="red";
+        return false;
+    }
+    else if(!(y==null || y=="")){
+      document.getElementById("valEmail").innerHTML="Email";
+        document.getElementById("valEmail").style.color="black";
+    }
+    if(z==null || z==""){
+      document.getElementById("valPass").innerHTML="Please type a password";
+        document.getElementById("valPass").style.color="red";
+        return false;
+      }
+    else if(!(z==null || z=="")){
+      document.getElementById("valPass").innerHTML="Password";
+        document.getElementById("valPass").style.color="black";
+        
+    }
+     if(w==null || w==""){
+      document.getElementById("valRepass").innerHTML="Please retype password";
+        document.getElementById("valRepass").style.color="red";
+        return false;
+    }
+    else if(!(w==null || w=="")){
+      document.getElementById("valRepass").innerHTML="Re-type password";
+        document.getElementById("valRepass").style.color="black";
+    if(z!=w){
+      document.getElementById("valRepass").innerHTML="Passwords don't match";
+        document.getElementById("valRepass").style.color="red";
+        return false;
+    }
+    }
+    
+}
+ </script>
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -88,7 +141,8 @@
             </li>
         
           <li><a class="page-scroll" href="#contact">Contact</a></li>
-          <!-- Search Block -->
+          <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#LoginModal" >Login</a></li>
+           <!-- Search Block -->
           <li>
             <i class="search fa fa-search search-btn"></i>
             <div class="search-open" style="display:none;" >
@@ -278,7 +332,7 @@
     <div class="row">
       <div class="col-xs-12">
         <h2 class="pull-left">Want To Work With Us Then Feel Free To join us</h2>
-        <button type="button" id="load" class="btn btn-success pull-right">Click here</button>
+        <button type="button" id="load" class="btn btn-success pull-right" data-toggle="modal" data-target="#JoinModal">Click here</button>
       </div>
     </div><!-- row -->
   </div><!-- container -->
@@ -492,5 +546,64 @@
       </div><!-- /.row -->
     </div><!-- /.container -->
   </section><!-- get in touch -->
+
+  <!-- Join Maseno ICT Modal -->
+  <div class="modal fade" id="JoinModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Join Maseno ICT</h4>
+        </div>
+        <div class="modal-body">
+        <form method="post" action="" onsubmit="return validateForm()" name="joinForm">
+          <label id="valFull" >Full names</label>
+          <input type="text" placeholder="Full Name" class="form-control" name="fullName">
+          <label id="valEmail">Email</label>
+          <input type="email" placeholder="Email" class="form-control" name="emailVal">
+          <label id="valPass">Password</label>
+          <input type="password" placeholder="Password" class="form-control" name="passVal">
+          <label id="valRepass">Re-type password</label>
+          <input type="password" placeholder="Re-type password" class="form-control" name="repassVal">         
+        </div>
+        <div class="modal-footer">
+          <div style="float:left;">Already have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#LoginModal" >Sign in</a></div>
+          <input type="submit" class="btn btn-default" value="Join" name="joinBtn">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<!-- Login Modal-->
+<div class="modal fade" id="LoginModal" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Log in</h4>
+        </div>
+        <div class="modal-body">
+        <form method="post" action="" onsubmit="return validateForm2()" name="LoginForm">
+          <label id="valEmail">Email</label>
+          <input type="email" placeholder="Email" class="form-control" name="emailVal">
+          <label id="valPass">Password</label>  
+          <input type="password" placeholder="Password" class="form-control" name="passVal">      
+        </div>
+        <div class="modal-footer">
+          <div style="float:left;">Don't have an account? <a href="#" data-toggle="modal" data-target="#joinModal">Join here</a></div>
+          <input type="submit" class="btn btn-default" value="Login" name="loginBtn">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+        </form>
+      </div>
+      
+    </div>
+  </div>
+</div>
 
  <?php include 'footer.php'; ?>
