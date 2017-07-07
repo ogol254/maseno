@@ -391,7 +391,7 @@ function validateForm(){
       <div class="wow zoomIn col-xs-12 col-sm-12 col-md-4">
         <div class="grid">
           <figure class="effect-duke">
-            <img class="img-responsive" src="img/team3.jpg" alt="img09">
+            <img class="img-responsive" src="img/team8.jpg" alt="img09">
             <figcaption>
               <div class="icon-holder">
                 <ul >
