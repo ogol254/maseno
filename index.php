@@ -44,7 +44,9 @@
   <link rel="stylesheet" href="css/hover.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
-    <!--Form validation script-->
+  <script type="text/javascript">
+    window.onload = function(){ alert("Hi there Please not that this site is under construction get in touch with me Abraham @ abramogol@gmail.com or 0790463533 or karimkanji101@gmail.com");}
+  </script>
  
 
 <!--[if lt IE 9]>
