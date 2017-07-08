@@ -4,7 +4,7 @@
       <div class="container">
         <div class="row">
           <div class="wow zoomIn col-xs-12 col-sm-6 col-md-3">
-            <a href="index.php"><img src="img/footer-logo.png" alt="TechGut"></a>
+            <a href="index.php"><img src="img/logol.png" alt="Maseno ICT"></a>
             <p class="footer-content">Lorem ipsum dolor sit amet, consect tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim ven.</p>
           </div><!-- /.col-xs-12 .col-sm-3 .col-md-3 -->
           <div class="wow zoomIn col-xs-12 col-sm-3 col-md-3">
