@@ -10,7 +10,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.jpg"/>
 
   <!-- Google Fonts -->
   <link href='http://fonts.googleapis.com/css?family=Roboto+Condensed:300italic,400italic,700italic,400,300,700' rel='stylesheet' type='text/css'>
@@ -45,58 +45,7 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/responsive.css">
     <!--Form validation script-->
- <script>
-function validateForm(){
- var x = document.forms["joinForm"]["fullName"].value;
- var y = document.forms["joinForm"]["emailVal"].value;
- var z = document.forms["joinForm"]["passVal"].value;
- var w = document.forms["joinForm"]["repassVal"].value;
- var a = 0;
-    if (x == null || x == "") {
-        document.getElementById("valFull").innerHTML="Please Fill in Name";
-        document.getElementById("valFull").style.color="red";
-        return false;
-    }
-    else if(!(x==null|| x=="")){
-      document.getElementById("valFull").innerHTML="Full names";
-        document.getElementById("valFull").style.color="black";
-    }
-    if(y==null || y==""){
-      document.getElementById("valEmail").innerHTML="Please Fill in email";
-        document.getElementById("valEmail").style.color="red";
-        return false;
-    }
-    else if(!(y==null || y=="")){
-      document.getElementById("valEmail").innerHTML="Email";
-        document.getElementById("valEmail").style.color="black";
-    }
-    if(z==null || z==""){
-      document.getElementById("valPass").innerHTML="Please type a password";
-        document.getElementById("valPass").style.color="red";
-        return false;
-      }
-    else if(!(z==null || z=="")){
-      document.getElementById("valPass").innerHTML="Password";
-        document.getElementById("valPass").style.color="black";
-        
-    }
-     if(w==null || w==""){
-      document.getElementById("valRepass").innerHTML="Please retype password";
-        document.getElementById("valRepass").style.color="red";
-        return false;
-    }
-    else if(!(w==null || w=="")){
-      document.getElementById("valRepass").innerHTML="Re-type password";
-        document.getElementById("valRepass").style.color="black";
-    if(z!=w){
-      document.getElementById("valRepass").innerHTML="Passwords don't match";
-        document.getElementById("valRepass").style.color="red";
-        return false;
-    }
-    }
-    
-}
- </script>
+ 
 
 <!--[if lt IE 9]>
 <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -126,37 +75,9 @@ function validateForm(){
           </a>
           <a class="navbar-brand" href="index.php"><img src="img/logo.png" alt="TechGut"></a>
         </div>
-        <div id="navbar" class="navbar-collapse collapse pull-right hidden-xs">
-          <ul class="nav navbar-nav navbar-right">
-            <li ><a class="page-scroll" href="#home">Home</a></li>
-            <li> <a class="page-scroll" href="#about">about us</a></li>
-            <li> <a class="page-scroll" href="#services">what we do</a></li>
-            <li> <a class="page-scroll" href="#product">product</a></li>
-            <li> <a class="page-scroll" href="#team">team</a></li>
-            <li class="dropdown"> <a class="page-scroll drop dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" href="#blog">blog</a>
-              <ul class="dropdown-menu" role="menu">
-                <!-- <li><a href="blog-full-width.php">full-width Blog</a></li> -->
-                <li><a href="blog-sidebar.php">sidebar blog</a></li>
-              </ul>
-            </li>
-        
-          <li><a class="page-scroll" href="#contact">Contact</a></li>
-          <li><a class="page-scroll" href="#" data-toggle="modal" data-target="#LoginModal" >Login</a></li>
-           <!-- Search Block -->
-          <li>
-            <i class="search fa fa-search search-btn"></i>
-            <div class="search-open" style="display:none;" >
-              <div class="input-group animated fadeInDown" >
-                <input type="text" class="form-control" placeholder="Search">
-                <span class="input-group-btn">
-                  <button class="btn-u" type="button">Go</button>
-                </span>
-              </div>
-            </div>    
-          </li>
-          <!-- End Search Block -->
-        </ul>
-      </div><!--/.nav-collapse -->
+        <!-- When edditing any content in the navigation. please edit this file   -->
+        <?php include 'navigation.php'; ?>
+        <!-- When edditing any content in the navigation. please edit this file -->
     </div>
   </div><!-- End of Nav -->
 </div>
@@ -433,43 +354,12 @@ function validateForm(){
 </section><!-- counting -->
 
 
-<!-- TESTIMONIAL-->
-<section class="wow zoomIn testimmonial section-padding">
-  <div class="container">
-    <div class="row">
-      <div class="col-xs-12">
-        <div class="testimonial-feed">
-          <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-              <div class="item active text-center">
-                <div class="image-bar" ><img src="img/testimonial.jpg" alt=""></div>
-                <p>“Perfection is achieved, not when there’s nothing more to add, but when theres is nothing left to take away.Laboriosam quae qui dolorem quasi molestias illo tempore optio amet, tempora deleniti. Magnam, distinctio!”</p>
-                <span class="pull-right"> Mark Robert</span>
-              </div>
-              <div class="item text-center">
-                <div class="image-bar" ><img src="img/testimonial2.jpg" alt=""></div>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe hic deserunt, fugit animi doloribus. Tempore, laboriosam. Laboriosam quae qui dolorem quasi molestias illo tempore optio amet, tempora deleniti. Magnam, distinctio!</p>
-                  <span class="pull-right">  Matt Route</span>
-                </div><!-- item text-center -->
-              </div><!-- carousel-inner -->
-            </div><!-- carousel -->
-          </div><!-- testimonial-feed -->
-          <div class="control-arrow">
-            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-              <i class="flaticon-previous11"></i>
-            </a>
-            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-              <i class="flaticon-next15"></i>
-            </a>
-          </div><!-- /.control-arrow -->
-        </div><!-- /.col-xs-12 -->
-      </div><!-- row -->
-    </div><!-- container -->
-  </section><!-- testimonial -->
-  
+
+<!-- for testimonial and blog    -->
 
 <?php include 'blog.php'; ?>
+
+<!-- for testimonial and blog    -->
 
   <!-- our partner -->
   <section class="partner-wrapper">
@@ -547,63 +437,6 @@ function validateForm(){
     </div><!-- /.container -->
   </section><!-- get in touch -->
 
-  <!-- Join Maseno ICT Modal -->
-  <div class="modal fade" id="JoinModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Join Maseno ICT</h4>
-        </div>
-        <div class="modal-body">
-        <form method="post" action="" onsubmit="return validateForm()" name="joinForm">
-          <label id="valFull" >Full names</label>
-          <input type="text" placeholder="Full Name" class="form-control" name="fullName">
-          <label id="valEmail">Email</label>
-          <input type="email" placeholder="Email" class="form-control" name="emailVal">
-          <label id="valPass">Password</label>
-          <input type="password" placeholder="Password" class="form-control" name="passVal">
-          <label id="valRepass">Re-type password</label>
-          <input type="password" placeholder="Re-type password" class="form-control" name="repassVal">         
-        </div>
-        <div class="modal-footer">
-          <div style="float:left;">Already have an account? <a href="#" data-dismiss="modal" data-toggle="modal" data-target="#LoginModal" >Sign in</a></div>
-          <input type="submit" class="btn btn-default" value="Join" name="joinBtn">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-        </form>
-      </div>
-      
-    </div>
-  </div>
-</div>
-<!-- Login Modal-->
-<div class="modal fade" id="LoginModal" role="dialog">
-    <div class="modal-dialog">
-    
-      <!-- Modal content-->
-      <div class="modal-content">
-        <div class="modal-header">
-          <h4 class="modal-title">Log in</h4>
-        </div>
-        <div class="modal-body">
-        <form method="post" action="" onsubmit="return validateForm2()" name="LoginForm">
-          <label id="valEmail">Email</label>
-          <input type="email" placeholder="Email" class="form-control" name="emailVal">
-          <label id="valPass">Password</label>  
-          <input type="password" placeholder="Password" class="form-control" name="passVal">      
-        </div>
-        <div class="modal-footer">
-          <div style="float:left;">Don't have an account? <a href="#" data-toggle="modal" data-target="#joinModal">Join here</a></div>
-          <input type="submit" class="btn btn-default" value="Login" name="loginBtn">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-        </form>
-      </div>
-      
-    </div>
-  </div>
-</div>
+ 
 
  <?php include 'footer.php'; ?>
